@@ -1,5 +1,5 @@
 let player: Sprite = null
-
+let luggage: Sprite = null
 namespace SpriteKind {
     export const NewType = SpriteKind.create()
 }
@@ -13,6 +13,10 @@ function setUpPlayer() {
     player.setPosition(10, 160)
 }
 
+function setUpLuggage() {
+luggage = sprites.create(assets.image`luggage-1`, SpriteKind.Luggage)
+}
+
 function setUpTilemap() {
     tiles.setCurrentTilemap(tilemap`test_level`)
 }
@@ -20,6 +24,7 @@ function setUpTilemap() {
 function startGame() {
     setUpPlayer()
     setUpTilemap()
+    setUpLuggage()
 }
 
 function jump(sprite: Sprite) {
