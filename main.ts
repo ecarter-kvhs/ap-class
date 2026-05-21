@@ -1,4 +1,5 @@
 let player: Sprite = null
+let luggage: Sprite = null
 
 namespace SpriteKind {
     export const NewType = SpriteKind.create()
@@ -14,6 +15,11 @@ function setUpPlayer() {
     player.setPosition(10, 160)
 }
 
+function setUpLuggage() {
+    luggage = sprites.create(assets.image`luggage`, SpriteKind.Luggage)
+    luggage.setPosition(124, 202)
+}
+
 function setUpTilemap() {
     tiles.setCurrentTilemap(tilemap`test_level`)
 }
@@ -21,6 +27,7 @@ function setUpTilemap() {
 function startGame() {
     setUpPlayer()
     setUpTilemap()
+    setUpLuggage()
 }
 
 function jump(sprite: Sprite) {
@@ -43,5 +50,5 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 startGame()
 
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Luggage, function(sprite: Sprite, otherSprite: Sprite) {
-
+    sprite.sayText('i touched the luggage')
 })

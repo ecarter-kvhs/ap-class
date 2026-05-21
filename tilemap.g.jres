@@ -22,6 +22,12 @@
         "tilemapTile": true,
         "displayName": "interactible_tile"
     },
+    "tile4": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEREREREAABAREREREQP8E9ERERERADwQEREREREAPBAREREREQA8EBERERERADwT0REREREAABAREREREQPAEBERERERAAA4O7u7u7uAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "luggage-tile"
+    },
     "test_level1": {
         "id": "test_level1",
         "mimeType": "application/mkcd-tilemap",
