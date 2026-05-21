@@ -34,7 +34,9 @@ function jump(sprite: Sprite) {
 }
 
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    jump(player)
+    if(player.isHittingTile(CollisionDirection.Bottom)){
+        jump(player)
+    }
 })
 
 startGame()
