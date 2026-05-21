@@ -26,7 +26,7 @@
         "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEREREREAABAREREREQP8E9ERERERADwQEREREREAPBAREREREQA8EBERERERADwT0REREREAABAREREREQPAEBERERERAAA4O7u7u7uAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true,
-        "displayName": "Luggage-1"
+        "displayName": "luggage-tile"
     },
     "test_level1": {
         "id": "test_level1",

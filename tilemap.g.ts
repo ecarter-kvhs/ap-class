@@ -45,7 +45,7 @@ namespace myTiles {
             case "tile2":return tile2;
             case "interactible_tile":
             case "tile3":return tile3;
-            case "Luggage-1":
+            case "luggage-tile":
             case "tile4":return tile4;
         }
         return null;
