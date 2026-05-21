@@ -15,7 +15,7 @@ function setUpPlayer() {
 }
 
 function setUpLuggage() {
-luggage = sprites.create(assets.image`luggage-1`, SpriteKind.Luggage)
+luggage = sprites.create(assets.image`Luggage-1`, SpriteKind.Luggage)
 }
 
 function setUpTilemap() {
