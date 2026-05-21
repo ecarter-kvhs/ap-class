@@ -2,6 +2,7 @@ let player: Sprite = null
 let luggage: Sprite = null
 namespace SpriteKind {
     export const NewType = SpriteKind.create()
+    export const Luggage = SpriteKind.create()
 }
 
 function setUpPlayer() {
@@ -39,9 +40,13 @@ function jump(sprite: Sprite) {
 }
 
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    if(player.isHittingTile(CollisionDirection.Bottom)){
+    if (player.isHittingTile(CollisionDirection.Bottom)) {
         jump(player)
     }
 })
 
 startGame()
+
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Luggage, function(sprite: Sprite, otherSprite: Sprite) {
+
+})
