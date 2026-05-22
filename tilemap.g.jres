@@ -4,12 +4,6 @@
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true
     },
-    "tile1": {
-        "data": "hwQQABAAAAAzMzMzMzMzMzMzMzMzMzMzMxEzMxERMzMzERERMxMRMzMxMzMxMxMzMzEzMzEzEzMzMTMzMTMTMzMxMxMxMxMzMxMzEREzMTMzExExExEzMzMzETMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMw==",
-        "mimeType": "image/x-mkcd-f4",
-        "tilemapTile": true,
-        "displayName": "background_tile"
-    },
     "tile2": {
         "data": "hwQQABAAAADu7u7u7u7u7u7u7u7u7u7u7h4R7u7u7u7uHu4RERER7u4e7u7h7u7u7h7u7uHu7u7uHu7u4e7u7u4e7u7u7u7u7h7u7u7u7u7uHu7u7u7u7u4e7u7u7u7u7h7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7g==",
         "mimeType": "image/x-mkcd-f4",
@@ -27,6 +21,12 @@
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true,
         "displayName": "luggage-tile"
+    },
+    "tile1": {
+        "data": "hwQQABAAAABmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZg==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "background_tile"
     },
     "test_level1": {
         "id": "test_level1",
