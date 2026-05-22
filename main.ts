@@ -1,5 +1,6 @@
 let player: Sprite = null
 let luggage: Sprite = null
+
 namespace SpriteKind {
     export const NewType = SpriteKind.create()
     export const Luggage = SpriteKind.create()
@@ -15,17 +16,19 @@ function setUpPlayer() {
 }
 
 function setUpLuggage() {
-luggage = sprites.create(assets.image`Luggage-1`, SpriteKind.Luggage)
+    luggage = sprites.create(assets.image`luggage`, SpriteKind.Luggage)
+    luggage.setPosition(128, 202)
 }
 
 function setUpTilemap() {
     tiles.setCurrentTilemap(tilemap`test_level`)
+    scene.setBackgroundColor(13)
 }
 
 function startGame() {
-    setUpPlayer()
     setUpTilemap()
-    //setUpLuggage()
+    setUpLuggage()
+    setUpPlayer()
 }
 
 function jump(sprite: Sprite) {
@@ -40,13 +43,44 @@ function jump(sprite: Sprite) {
 }
 
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    if (player.isHittingTile(CollisionDirection.Bottom)) {
+    if (player.isHittingTile(CollisionDirection.Bottom) || player.overlapsWith(luggage)) {
         jump(player)
     }
 })
 
 startGame()
 
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Luggage, function(sprite: Sprite, otherSprite: Sprite) {
+scene.onHitWall(SpriteKind.Luggage, function (sprite, location) {
+    sprite.vx = 0
+    sprite.vy = 0
+})
 
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Luggage, function (sprite: Sprite, otherSprite: Sprite) {
+
+    if (sprite.vx > 0 && !otherSprite.isHittingTile(CollisionDirection.Right)) {
+        otherSprite.x += 1
+        sprite.x -= 1
+    }
+    else if (otherSprite.isHittingTile(CollisionDirection.Right)) {
+        sprite.x -= 3
+    }
+
+    if (sprite.vx < 0 && !otherSprite.isHittingTile(CollisionDirection.Left)) {
+        otherSprite.x -= 1
+        sprite.x += 1
+    }
+    else if (otherSprite.isHittingTile(CollisionDirection.Right)) {
+        sprite.x += 3
+    }
+
+    let playerBottom = sprite.bottom
+    let luggageTop = otherSprite.top
+
+    if (sprite.vy > 0 && !controller.A.isPressed()) {
+        sprite.bottom = luggageTop
+        sprite.vy = 0
+    } 
+    else if (controller.A.isPressed()) {
+        sprite.vy = -100
+    }
 })
