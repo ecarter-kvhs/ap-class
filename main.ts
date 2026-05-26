@@ -1,6 +1,7 @@
 let player: Sprite = null
 let luggage: Sprite = null
 
+
 namespace SpriteKind {
     export const NewType = SpriteKind.create()
     export const Luggage = SpriteKind.create()
@@ -31,9 +32,9 @@ function startGame() {
     setUpPlayer()
 }
 
-function jump(sprite: Sprite) {
-    const grav = 220
-    const jump_const = -100
+function jump(sprite: Sprite, j?: number, g?: number ) {
+    const grav =  g || 220
+    const jump_const = j || -100
     sprite.ay = jump_const
     sprite.vy = jump_const
     while (sprite.ay < grav) {
