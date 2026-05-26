@@ -4,15 +4,15 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "background"
     },
-    "image2": {
-        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwd3d3BwAAAHB3d3cAAABwcBd3dwAHAAdwdxdxB3cAB3B3dxEHcHAAcHd3F3d3dwBwd3cRB3AAd3AXd3EHdwBwcHd3dwcHAABwd3d3BwAAAHd3d3cHAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-        "mimeType": "image/x-mkcd-f4",
-        "displayName": "player"
-    },
     "image3": {
         "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEREREREAABAREREREQP8E9ERERERADwQEREREREAPBAREREREQA8EBERERERADwT0REREREAABAREREREQPAEBERERERAAA4O7u7u7uAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
         "mimeType": "image/x-mkcd-f4",
         "displayName": "luggage"
+    },
+    "image2": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB3d3cAAAAAAHcXdwAHAAAAF3dxAHcAAHd3d3EAcABwB3d3cXd3d3cAd3dxd3d3dwB3d3EAcABwBxd3cQB3AAB3dxd3AAcAAAB3d3cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "player"
     },
     "*": {
         "mimeType": "image/x-mkcd-f4",
