@@ -55,6 +55,12 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     }
 })
 
+controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (player.isHittingTile(CollisionDirection.Bottom)) {
+        jump(player)
+    }
+})
+
 startGame()
 
 scene.onHitWall(SpriteKind.Luggage, function (sprite, location) {
@@ -83,11 +89,11 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Luggage, function (sprite: Sprit
     let playerBottom = sprite.bottom
     let luggageTop = otherSprite.top
 
-    if (sprite.vy > 0 && !controller.A.isPressed()) {
+    if (sprite.vy > 0 && !controller.A.isPressed() && !controller.up.isPressed()) {
         sprite.bottom = luggageTop
         sprite.vy = 0
     } 
-    else if (controller.A.isPressed()) {
-        sprite.vy = -100
+    else if (controller.A.isPressed() || controller.up.isPressed()) {
+        jump(player)
     }
 })
