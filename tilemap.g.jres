@@ -4,29 +4,29 @@
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true
     },
-    "tile2": {
-        "data": "hwQQABAAAADu7u7u7u7u7u7u7u7u7u7u7h4R7u7u7u7uHu4RERER7u4e7u7h7u7u7h7u7uHu7u7uHu7u4e7u7u4e7u7u7u7u7h7u7u7u7u7uHu7u7u7u7u4e7u7u7u7u7h7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7g==",
-        "mimeType": "image/x-mkcd-f4",
-        "tilemapTile": true,
-        "displayName": "floor_tile"
-    },
-    "tile3": {
-        "data": "hwQQABAAAACIiIiIiIiIiIgYiIiIiIGIiBiIiIiIgYiIGIiIiIiBiIgYiIiIiIGIiBiIERERgYiIGBGIiBiBiIgYiIiIiIGIiBiIiIiIgYiIGIiIiIiBiIgYiIiIiIGIiBiIiIiIgYiIGIiIiIiBiIiIiIiIiIGIiIiIiIiIiIiIiIiIiIiIiA==",
-        "mimeType": "image/x-mkcd-f4",
-        "tilemapTile": true,
-        "displayName": "interactible_tile"
-    },
     "tile4": {
         "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEREREREAABAREREREQP8E9ERERERADwQEREREREAPBAREREREQA8EBERERERADwT0REREREAABAREREREQPAEBERERERAAA4O7u7u7uAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true,
         "displayName": "luggage-tile"
     },
+    "tile3": {
+        "data": "hwQQABAAAADu7u7u7u7u7u5ERERERETuTk5ERERE5ORO5ERERERO5E5ETkRE5ETkTkTkRERORORORERO5ERE5E5ERORORETkTkRE5E5ERORORERO5ERE5E5E5ERETkTkTkRORETkRORO5ERERERO5E5OREREROTk7kRERERERO7u7u7u7u7u7g==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "interactible_tile"
+    },
     "tile1": {
-        "data": "hwQQABAAAABmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZg==",
+        "data": "hwQQABAAAABmZ2ZmdmZmZ2ZnZmZ2ZmZnZmdmZmZmZmdmZ2ZmZmZmZ2ZmZmZmZmZnZmZmZmdmZmZmZmZmZ3ZmZmZmZ2ZndmZmZmZnZmd2ZmZmZmdmZ3Z2ZmZmZ2ZmdnZmZmZnZmZ2ZmZmZmZmZmZmZmZmZmZ2ZmZmZmdmZnZmZmZmZ2ZmdmZmZw==",
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true,
         "displayName": "background_tile"
+    },
+    "tile2": {
+        "data": "hwQQABAAAAAjMzMy093d3SMjMzLT3d3dIyMzMtPd3d0zIzMy093d3TMjMzLT3d3dMiMzM9Pd3d0yIzMz093d3TIzMzPS3d3dMjMzM9Ld3d0yMzIz0t3d3TIzMjPS3d3dMzMyM9Ld3d0zMzIz0t3d3SMzMjPT3d3dIzMyM9Pd3d0jMzMy093d3Q==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "floor_tile"
     },
     "test_level1": {
         "id": "test_level1",
