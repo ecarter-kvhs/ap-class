@@ -23,7 +23,7 @@
         "displayName": "background_tile"
     },
     "tile2": {
-        "data": "hwQQABAAAAAjMzMy093d3SMjMzLT3d3dIyMzMtPd3d0zIzMy093d3TMjMzLT3d3dMiMzM9Pd3d0yIzMz093d3TIzMzPS3d3dMjMzM9Ld3d0yMzIz0t3d3TIzMjPS3d3dMzMyM9Ld3d0zMzIz0t3d3SMzMjPT3d3dIzMyM9Pd3d0jMzMy093d3Q==",
+        "data": "hwQQABAAAAAjM9Pd3b27uyMj093dvbu7IyPT3d29u7szI9Pd3b27uzMj093dvbu7MiPT3d29u7syI9Pd3b27uzIz093dvbu7MjPT3d29u7syM9Ld3b27uzIz0t3dvbu7MzPS3d29u7szM9Ld3b27uyMz0t3dvbu7IzPS3d29u7sjM9Pd3b27uw==",
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true,
         "displayName": "floor_tile"
