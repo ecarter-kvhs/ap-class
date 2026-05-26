@@ -17,8 +17,14 @@ function setUpPlayer() {
 }
 
 function setUpLuggage() {
-    luggage = sprites.create(assets.image`luggage`, SpriteKind.Luggage)
-    luggage.setPosition(128, 202)
+    let luggageSpawns = tiles.getTilesByType(assets.tile`luggage-tile`)
+
+    luggageSpawns.forEach((location) => {
+        let luggageSprite = sprites.create(assets.image`luggage`, SpriteKind.Luggage)
+        luggageSprite.setPosition(location.x, location.y)
+
+        tiles.setTileAt(location, assets.tile`transparency16`)
+    })
 }
 
 function setUpTilemap() {
@@ -44,7 +50,7 @@ function jump(sprite: Sprite, j?: number, g?: number ) {
 }
 
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    if (player.isHittingTile(CollisionDirection.Bottom) || player.overlapsWith(luggage)) {
+    if (player.isHittingTile(CollisionDirection.Bottom)) {
         jump(player)
     }
 })
