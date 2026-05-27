@@ -1,6 +1,5 @@
 let player: Sprite = null
-let luggage: Sprite = null
-
+let level = 1
 
 namespace SpriteKind {
     export const NewType = SpriteKind.create()
@@ -13,17 +12,33 @@ function setUpPlayer() {
     scene.cameraFollowSprite(player)
     player.setStayInScreen(true)
     jump(player)
-    player.setPosition(10, 160)
+    switch (level) {
+        case 1:
+            player.setPosition(10, 160)
+            break
+    }
 }
 
 function setUpLuggage() {
-    luggage = sprites.create(assets.image`luggage`, SpriteKind.Luggage)
-    luggage.setPosition(128, 202)
+    let luggageSpawns = tiles.getTilesByType(assets.tile`luggage-tile`)
+
+    luggageSpawns.forEach((location) => {
+        let luggageSprite = sprites.create(assets.image`luggage`, SpriteKind.Luggage)
+        luggageSprite.setPosition(location.x, location.y)
+
+        tiles.setTileAt(location, assets.tile`transparency16`)
+    })
 }
 
 function setUpTilemap() {
-    tiles.setCurrentTilemap(tilemap`test_level`)
-    scene.setBackgroundColor(13)
+    switch (level) {
+        case 1:
+            tiles.setCurrentTilemap(tilemap`test_level`)
+            scene.setBackgroundColor(13)
+            break
+        default:
+            game.gameOver(true)
+    }
 }
 
 function startGame() {
@@ -44,7 +59,13 @@ function jump(sprite: Sprite, j?: number, g?: number ) {
 }
 
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    if (player.isHittingTile(CollisionDirection.Bottom) || player.overlapsWith(luggage)) {
+    if (player.isHittingTile(CollisionDirection.Bottom)) {
+        jump(player)
+    }
+})
+
+controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (player.isHittingTile(CollisionDirection.Bottom)) {
         jump(player)
     }
 })
@@ -55,6 +76,14 @@ scene.onHitWall(SpriteKind.Luggage, function (sprite, location) {
     sprite.vx = 0
     sprite.vy = 0
 })
+
+scene.onOverlapTile(SpriteKind.Player, assets.tile`door`, function(sprite: Sprite, location: tiles.Location) {
+    sprites.destroy(player)
+    sprites.destroyAllSpritesOfKind(SpriteKind.Luggage)
+
+    level++
+    startGame()
+}) 
 
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Luggage, function (sprite: Sprite, otherSprite: Sprite) {
 
@@ -77,11 +106,11 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Luggage, function (sprite: Sprit
     let playerBottom = sprite.bottom
     let luggageTop = otherSprite.top
 
-    if (sprite.vy > 0 && !controller.A.isPressed()) {
+    if (sprite.vy > 0 && !controller.A.isPressed() && !controller.up.isPressed()) {
         sprite.bottom = luggageTop
         sprite.vy = 0
     } 
-    else if (controller.A.isPressed()) {
-        sprite.vy = -100
+    else if (controller.A.isPressed() || controller.up.isPressed()) {
+        jump(player)
     }
 })
