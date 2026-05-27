@@ -33,7 +33,7 @@ function setUpLuggage() {
 function setUpTilemap() {
     switch (level) {
         case 1:
-            tiles.setCurrentTilemap(tilemap`test_level`)
+            tiles.setCurrentTilemap(tilemap`level1_cargo_hold`)
             scene.setBackgroundColor(13)
             break
         default:
