@@ -9,6 +9,16 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "player"
     },
+    "image1": {
+        "data": "hwQQABAAAAD///////////////////////////////////////////////////////////////8fERERERER/x///x8R/x//H/H/Hx/xEf//8f8R/xHx//8fEfH/Ef///////////////////////////////////////////////////////w==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "bomb"
+    },
+    "image4": {
+        "data": "hwQQABAAAAAiIiIiIiIiIiISESIiIiIiIhIiERERESIiEiEiESISIiIiISIRISEiIiIhEiIRISIiIhERIiIiIiIiIiIiIiIiIiIiIhIRIiIiIhERIRIRIiIiEiIiIiEiIiISIiIiISIiIiIhIhIhIiIiIhIiESIiIiIiIhEhIiIiIiIiIiIiIg==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "defusal_kit"
+    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",
