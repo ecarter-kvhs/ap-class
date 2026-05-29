@@ -2,7 +2,8 @@
     "name": "AP Class - Going down in flames",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "Extra Effects": "github:AlexSzeto/extra-effects#v3.1.0"
     },
     "files": [
         "main.ts",

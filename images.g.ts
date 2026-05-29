@@ -172,6 +172,63 @@ namespace myImages {
 . . . . f . . . . . f . . . . . 
 . . . . . . . . . . . . . . . . 
 `;
+            case "image2":
+            case "player":return img`
+. . . 7 7 7 7 7 7 7 7 7 7 . . . 
+. . . 7 7 1 7 7 7 7 1 7 7 . . . 
+. . . 7 7 7 7 7 7 7 7 7 7 . . . 
+. . . 7 1 7 7 7 7 7 7 1 7 . . . 
+. . . 7 7 1 1 1 1 1 1 7 7 . . . 
+. . . 7 7 7 7 7 7 7 7 7 7 . . . 
+. . . . . . . 7 7 . . . . . . . 
+. . . . . . . 7 7 . . . . . . . 
+. . . . 7 7 . 7 7 . 7 7 . . . . 
+. . . . . 7 7 7 7 7 7 . . . . . 
+. . . . . . . 7 7 . . . . . . . 
+. . . . . . . 7 7 . . . . . . . 
+. . . . . . . 7 7 . . . . . . . 
+. . . . . . 7 7 7 7 . . . . . . 
+. . . . . 7 7 . . 7 7 . . . . . 
+. . . . . 7 . . . . 7 . . . . . 
+`;
+            case "image1":
+            case "bomb":return img`
+f f f f f f f f f f f f f f f f 
+f f f f f f 1 1 1 f f f f f f f 
+f f f f f f 1 f 1 1 f f f f f f 
+f f f f f f 1 f f f 1 f f f f f 
+f f f f f f 1 f f f 1 f f f f f 
+f f f f f f 1 f f f 1 f f f f f 
+f f f f f f 1 f f 1 1 f f f f f 
+f f f f f f 1 1 1 1 f f f f f f 
+f f f f f f 1 1 f f f f f f f f 
+f f f f f f 1 1 1 f f f f f f f 
+f f f f f f 1 f 1 1 1 f f f f f 
+f f f f f f 1 f f 1 1 f f f f f 
+f f f f f f 1 f 1 1 f f f f f f 
+f f f f f f 1 1 1 f f f f f f f 
+f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f 
+`;
+            case "image4":
+            case "defusal_kit":return img`
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 
+2 1 2 1 1 1 1 2 2 1 2 2 2 2 2 2 
+2 1 2 2 2 2 1 2 2 1 1 1 2 2 2 2 
+2 2 1 2 2 2 1 2 2 1 2 2 1 2 2 2 
+2 2 1 2 2 1 1 2 2 1 2 2 2 1 2 2 
+2 2 1 1 1 2 2 2 2 1 2 2 2 2 1 2 
+2 2 1 1 1 2 2 2 1 2 2 2 2 2 1 2 
+2 2 1 2 1 1 2 2 1 2 2 2 2 1 1 2 
+2 2 1 2 2 1 2 2 1 1 2 2 1 1 2 2 
+2 2 1 2 1 1 2 2 2 1 1 1 1 2 2 2 
+2 2 1 1 2 2 2 2 2 1 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+`;
         }
         return null;
     })
