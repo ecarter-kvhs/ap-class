@@ -25,5 +25,23 @@
         "arcade"
     ],
     "preferredEditor": "tsprj",
-    "languageRestriction": "javascript-only"
+    "languageRestriction": "javascript-only",
+    "palette": [
+        "#000000",
+        "#FFFFFF",
+        "#FF4010",
+        "#FA0C00",
+        "#FF8135",
+        "#FFF609",
+        "#249CA3",
+        "#255D90",
+        "#003FAD",
+        "#87F2FF",
+        "#FFD609",
+        "#5C406c",
+        "#A4839F",
+        "#E5CDC4",
+        "#91463D",
+        "#000000"
+    ]
 }
